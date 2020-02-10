@@ -205,7 +205,7 @@ GameObject:
   m_Component:
   - component: {fileID: 133474636}
   m_Layer: 0
-  m_Name: Castle
+  m_Name: Castle_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -660,6 +660,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 323815b07844cac4c8b30ef5b8c21421, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minDist: 0.1
 --- !u!120 &693384133
 LineRenderer:
   m_ObjectHideFlags: 0
