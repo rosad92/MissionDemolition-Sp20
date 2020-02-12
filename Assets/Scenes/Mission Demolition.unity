@@ -176,6 +176,7 @@ GameObject:
   - component: {fileID: 298904239}
   - component: {fileID: 298904242}
   - component: {fileID: 298904243}
+  - component: {fileID: 298904244}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -283,6 +284,34 @@ MonoBehaviour:
   cloudScaleMin: 1
   cloudScaleMax: 3
   cloudSpeedMult: 0.5
+--- !u!114 &298904244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298904238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06d79f398e23be14380988edf6600d78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uitLevel: {fileID: 1048236607}
+  uiShots: {fileID: 1500528256}
+  uitButton: {fileID: 1753263175}
+  castlePos: {x: 50, y: -9.5, z: 0}
+  castles:
+  - {fileID: 9127563227683743384, guid: 51d591d56f7520744b6a0bd65d3b4f56, type: 3}
+  - {fileID: 9127563227683743384, guid: eb746a4995f3e354f92e83c40003c180, type: 3}
+  - {fileID: 9127563227683743384, guid: 3ac88dfebb1bf5644a4d679ecc17537b, type: 3}
+  - {fileID: 9127563227683743384, guid: db55365c3123ee844a327d7b8841f352, type: 3}
+  - {fileID: 9127563227683743384, guid: bea23c2ecec59984d803252c804c8921, type: 3}
+  level: 0
+  levelMax: 0
+  shotsTaken: 0
+  castle: {fileID: 0}
+  mode: 0
+  showing: Show Slingshot
 --- !u!1 &470487979
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,7 +393,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 470487982}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 298904244}
+        m_MethodName: SwitchView
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &470487982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1321,6 +1361,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1753263173}
   m_CullTransparentMesh: 0
+--- !u!1 &1785486239
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1785486240}
+  m_Layer: 0
+  m_Name: View Both
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1785486240
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785486239}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 25, y: 25, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1843782982
 GameObject:
   m_ObjectHideFlags: 0
