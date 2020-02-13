@@ -51,7 +51,13 @@ public class ProjectileLine : MonoBehaviour{
             line.SetPosition(0, points[0]);
             line.SetPosition(1, points[1]);
             line.enabled = true;
+        } else {
+            points.Add(pt);
+            line.positionCount = points.Count;
+            line.SetPosition(points.Count - 1, lastPoint);
+            line.enabled = true;
         }
+
     }
     public Vector3 lastPoint {
         get {

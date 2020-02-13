@@ -14,7 +14,7 @@ public class MissionDemolition : MonoBehaviour{
 
     [Header("Set in Inspector")]
     public Text uitLevel;
-    public Text uiShots;
+    public Text uitShots;
     public Text uitButton;
     public Vector3 castlePos;
     public GameObject[] castles;
@@ -60,7 +60,7 @@ public class MissionDemolition : MonoBehaviour{
 
     void UpdateGUI() {
         uitLevel.text = "Level: " + (level + 1) + " of " + levelMax;
-        uiShots.text = "Shots Taken: " + shotsTaken;
+        uitShots.text = "Shots Taken: " + shotsTaken;
     }
 
     // Update is called once per frame

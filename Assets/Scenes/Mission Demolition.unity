@@ -297,15 +297,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uitLevel: {fileID: 1048236607}
-  uiShots: {fileID: 1500528256}
+  uitShots: {fileID: 1500528256}
   uitButton: {fileID: 1753263175}
   castlePos: {x: 50, y: -9.5, z: 0}
   castles:
   - {fileID: 9127563227683743384, guid: 51d591d56f7520744b6a0bd65d3b4f56, type: 3}
-  - {fileID: 9127563227683743384, guid: eb746a4995f3e354f92e83c40003c180, type: 3}
   - {fileID: 9127563227683743384, guid: 3ac88dfebb1bf5644a4d679ecc17537b, type: 3}
-  - {fileID: 9127563227683743384, guid: db55365c3123ee844a327d7b8841f352, type: 3}
   - {fileID: 9127563227683743384, guid: bea23c2ecec59984d803252c804c8921, type: 3}
+  - {fileID: 9127563227683743384, guid: db55365c3123ee844a327d7b8841f352, type: 3}
+  - {fileID: 9127563227683743384, guid: eb746a4995f3e354f92e83c40003c180, type: 3}
   level: 0
   levelMax: 0
   shotsTaken: 0
@@ -582,7 +582,7 @@ LineRenderer:
   m_GameObject: {fileID: 693384131}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
@@ -1371,7 +1371,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1785486240}
   m_Layer: 0
-  m_Name: View Both
+  m_Name: ViewBoth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
