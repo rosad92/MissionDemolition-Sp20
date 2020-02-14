@@ -30,11 +30,6 @@ public class Slingshot : MonoBehaviour {
         launchPos = launchPointTrans.position;
     }
 
-    // Start is called before the first frame update
-    void Start(){
-        
-    }
-
     // Update is called once per frame
     void Update(){
         if (!aimingMode) return;
